@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Web Sockets</title>
+    </head>
+    <body>
+        <h2>Web sockets</h2>
+
+        <div className='chat window'>
+            <div id='output'></div>
+        </div>
+        <div className='message-box'>
+            <div id='typing-message'></div>
+            <input id='name' type='text' placeholder="Name" />
+            <input id='message' type='text' placeholder="message" />
+            <button id='send-button' >Send</button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js" integrity="sha512-RjPwl9YNS2z4nf50767Vg8dW2WLVv8WmKMYhZVBgiCJaiGVNIjXcVcpzVLUzuojaUM5ACZefP6sXnaWkR0lj0w==" crossorigin="anonymous"></script>
+        <script src='./chat.js'></script>
+    </body>
+</html>
